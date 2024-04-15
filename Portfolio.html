@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Portfolio</title>
+</head>
+<!-- Theme: https://prashantsani.com/ && https://www.youtube.com/watch?v=KWVJTRWILjU-->
+<!-- Good font-family: inconsolata,monospace-->
+<body>
+    <div class="container">
+        <header id="hex-grid">
+            <div class="light"></div>
+            <div class="grid"></div>
+        </header>
+    </div>
+    <div class="menu-button" tabindex="-1">
+        <img src = "Images/MenuButton.png" class="menu-button-img">
+        <div class="menu-circle-parent">
+            <div class="menu-circle"></div>
+        </div>
+    </div>
+    <div class="menu-div" tabindex="-1">
+        <div class="menu-buttons">
+            <div class="home-button-div button-div">
+                <a href="#home" class="home-button sect-button">Home</a>
+            </div>
+            <div class="skill-button-div button-div">
+                <a href="#skill" class="skill-button sect-button">Skills</a>
+            </div>
+            <div class="projects-button-div button-div">
+                <a href="#projects" class="projects-button sect-button">Projects</a>
+            </div>
+            <div class="timeline-button-div button-div">
+                <a href="#timeline" class="timeline-button sect-button">Timeline</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="progressbar"></div>
+    <div class="scrollpath"></div>
+
+    <!-- Check out  https://alvarotrigo.com/blog/css-text-animations/ (first and last) & https://codepen.io/carloscdev/pen/mdBLmwP -->
+    <!-- also https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/ -->
+    <div class="sections" tabindex="0">
+        <section class="home section">
+            <div id="intro">
+                <h1 id="hello">Hello, I'm <span class="imp-home">Thomas De bruyn</span></h1>
+                <div class="move-up-text">
+                    <h2 class="specialities-up">I'm a</h2>
+                    <div id="specialities-box">
+                        <h2 class="speciality half-up imp-home">competitive programmer</h2>
+                    </div>
+                </div>
+                <p class="home-info-me">I'm a young programmer (14 years old). I'm still in school and programming is my hobby.</p>
+            </div>
+            <!--<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Domainme.png" class="hero-foto">-->
+        </section>
+        <div class="hexagon-bottom"></div>
+        <section class="skill section">
+            <img src="Images/arrow.png" class="languages-arrow-prev">
+            <!--<div class="growcircle"></div>-->
+            <p class="section-begin">skills</p>
+            <p class="section-end">skills</p>
+            <div class="language-divs">
+                <div class="skill-div languagediv" style="transform: rotateY(0deg) translateZ(400px);">
+                    <div class="languages">
+                        <div class="language">
+                            <img src="Images/HTMLLogo.png" class="language-img">
+                            <ul class="language-list">
+                                <li class="language-list-item">I use it for front-end web development</li>
+                                <li class="language-list-item">First programming language I learned</li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <img src="Images/CSSLogo.png" class="language-img">
+                            <ul class="language-list">
+                                <li class="language-list-item">I use it for front-end web development</li>
+                                <li class="language-list-item">I learnt it in Codefever</li>
+                                <li class="language-list-item">Second programming language I learned</li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <img src="Images/JavascriptLogo.png" class="language-img">
+                            <ul class="language-list">
+                                <li class="language-list-item">I use it for front-end web development</li>
+                                <li class="language-list-item">I learnt it in Codefever</li>
+                                <li class="language-list-item">Third programming language I learned</li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <img src="Images/PythonLogo.png" class="language-img">
+                            <ul class="language-list">
+                                <li class="language-list-item">I learnt it in Codefever</li>
+                                <li class="language-list-item">Fourth programming language I learned</li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <img src="Images/CSharpLogo.png" class="language-img CSharp">
+                            <ul class="language-list">
+                                <li class="language-list-item">I only use it with Unity for making games</li>
+                                <li class="language-list-item">Fifth programming language I learned</li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <img src="Images/CPlusPlusLogo.png" class="language-img">
+                            <ul class="language-list">
+                                <li class="language-list-item">I use it in competitive programming</li>
+                                <li class="language-list-item">Last programming language I learned</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="languagediv langdiv HTLM" style="transform: rotateY(51.4deg) translateZ(400px);">
+                    <h1 class="language-titel">HTML</h1>
+                    <img src="Images/HTMLLogo.png" class="language-expl-img">
+                    <p class="language-expl">HTML is the first programming language I ever used. I started with it at Codefever at 10 years old.
+                         After I was done with the HTML, CSS and Javascript lessons I didn't do much with it until begin 2024 when I was 14 years old.
+                        That is the time I made my portfolio.</p>
+                </div>
+                <div class="languagediv langdiv CSS" style="transform: rotateY(102.8deg) translateZ(400px);">
+                    <h1 class="language-titel">CSS</h1>
+                    <img src="Images/CSSLogo.png" class="language-expl-img">
+                    <p class="language-expl">CSS is the second programming language I ever used. I started with it at Codefever at 10 years old.
+                         After I was done with the HTML, CSS and Javascript lessons I didn't do much with it until begin 2024 when I was 14 years old.
+                        That is the time I made my portfolio.</p>
+                </div>
+                <div class="languagediv langdiv Javascript" style="transform: rotateY(154.2deg) translateZ(400px);">
+                    <h1 class="language-titel">Javascript</h1>
+                    <img src="Images/JavascriptLogo.png" class="language-expl-img">
+                    <p class="language-expl">Javascript is the third programming language I ever used. I started with it at Codefever at 10 years old.
+                         After I was done with the HTML, CSS and Javascript lessons I didn't do much with it until begin 2024 when I was 14 years old.
+                        That is the time I made my portfolio.</p>
+                </div>
+                <div class="languagediv langdiv Python" style="transform: rotateY(205.6deg) translateZ(400px);">
+                    <h1 class="language-titel">Python</h1>
+                    <img src="Images/PythonLogo.png" class="language-expl-img">
+                    <p class="language-expl">Python is the fourth programming language I ever used. I started with it at Codefever at ... years old.
+                         After I was done with the Python lessons I didn't do much with it, but I want to use it again.</p>
+                </div>
+                <div class="languagediv langdiv CSharp" style="transform: rotateY(257deg) translateZ(400px);">
+                    <h1 class="language-titel">C#</h1>
+                    <img src="Images/CSharpLogo.png" class="language-expl-img">
+                    <p class="language-expl">C# is the fifth programming language I ever used. 
+                        I learned this programming language from Youtube videos. The only thing I use it for is to make games int unity.</p>
+                </div>
+                <div class="languagediv langdiv CPlusPlus" style="transform: rotateY(308.4deg) translateZ(400px);">
+                    <h1 class="language-titel">C++</h1>
+                    <img src="Images/CPlusPlusLogo.png" class="language-expl-img">
+                    <p class="language-expl">C++ is the last programming language I ever used.
+                         I learned it because after I got third in the BEOI I could join the BECP.
+                         There you participate in OI's (EJOI, WEOI, IOI, ...) using c++ as your programming language.</p>
+                </div>
+            </div>
+            
+            <img src="Images/arrow.png" class="languages-arrow">
+            <div class="dots">
+                <img src="Images/dot.png" class="dot dot-active">
+                <img src="Images/dot.png" class="dot">
+                <img src="Images/dot.png" class="dot">
+                <img src="Images/dot.png" class="dot">
+                <img src="Images/dot.png" class="dot">
+                <img src="Images/dot.png" class="dot">
+                <img src="Images/dot.png" class="dot">
+            </div>
+        </section>
+        <section class="projects section">
+            <p class="section-begin">projects</p>
+            <p class="section-end">projects</p>
+    
+            <div class="projects-div">
+                <div class="project" id="left">
+                    <a href="Portfolio.html" class="project-name">Portfolio</a>
+                    <p class="info">This is my portfolio. It has a lot of animations. I made it at 14 years old.</p>
+                    <a href="#Portfolio" class="more-info">More info</a>
+                </div>
+                <div class="project" id="left">
+                    <a href="Portfolio.html" class="project-name">Tower defense game</a>
+                    <p class="info">This is a tower defense game. It's a simple tower defense game on mobile. I started working on it with my cousin in 2022 when I was 12 years old, but I stopped working on it when it was almost done. In 2024 I started working on it again and finished it.</p>
+                    <a href="#TowerDefense" class="more-info">More info</a>
+                </div>
+            </div>
+        </section>
+        <section class="timeline-sect section">
+            <p class="section-begin">timeline</p>
+            <p class="section-end">timeline</p>
+
+            <div class="timeline-div">
+                <h1 class="timeline-title">My Timeline</h1>
+                <!-- vertical https://codepen.io/j471n/pen/vYJaLvm 
+                <div class="timeline">
+                    <div class="outer">
+                        <div class="card">
+                            <h1 class="timeline-card-title">Title 1</h1>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- horizontal https://codepen.io/Naasa21/pen/qdxKMo/ -->
+                <div class="timeline">
+                    <div class="dates">
+                        <a href="#0" class="year-select selected">2009</a>
+                        <a href="#1" class="year-select">2020</a>
+                        <a href="#2" class="year-select">2022</a>
+                        <a href="#3" class="year-select">2023</a>
+                        <a href="#4" class="year-select">2024</a>
+                    </div>
+
+                    <div class="happenings-div">
+                        <div id="2009" class="year-info" style="opacity: 1;">
+                            <div class="year-div">
+                                <h3 class="year-happening">Birth</h3>
+                                <p class="year-happening-info">I was born in 2009 on the 21th of June.</p>
+                            </div>
+                        </div>
+                        <div id="2020?" class="year-info">
+                            <div class="year-div">
+                                <h3 class="year-happening">Codefever</h3>
+                                <p class="year-happening-info">In This year I started with Codefever because my cousin was doing it too. This was the start of my programming journey.</p>
+                            </div>
+                        </div>
+                        <div id="2022" class="year-info">
+                            <div class="year-div">
+                                <h3 class="year-happening">C++ and Unity</h3>
+                                <p class="year-happening-info">In This year my dad suggested to learn Unity to make game. So I did that and started making video games with Unity and C++.</p>
+                            </div>
+                            <div class="year-div">
+                                <h3 class="year-happening">Tower defense game</h3>
+                                <p class="year-happening-info">While learning Unity and C++ I made a tower defense game but I stopped working on it until 2024, because almost everything was done so I completed it in 2024.</p>
+                            </div>
+                        </div>
+                        <div id="2023" class="year-info">
+                            <div class="year-div">
+                                <h3 class="year-happening">BECP</h3>
+                                <p class="year-happening-info">In this year I participated in the BEOI and got 3th place. After the BEOI I joined the BECP and in September I participed in the EJOI. At the BECP I learned C++ for competitive programming.</p>
+                            </div>
+                        </div>
+                        <div id="2024" class="year-info">
+                            <div class="year-div">
+                                <h3 class="year-happening">HTML CSS Javascript</h3>
+                                <p class="year-happening-info">At the beginning of 2024 I started learning HTML, CSS and Javascript.</p>
+                            </div>
+                            <div class="year-div">
+                                <h3 class="year-happening">Portfolio</h3>
+                                <p class="year-happening-info">I started working on this portfolio while on vacation in Lapland. It took a few weeks To complete. It was my first website project.</p>
+                                <a href="#Portfolio" class="timeline-more-info">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </div>
+    
+
+    <script src="Portfolio.js"></script>
+    <script src="PortfolioMoveProjects.js"></script>
+</body>
+</html>
