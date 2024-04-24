@@ -290,10 +290,11 @@ function OpenCloseMenu(){
             menuDiv.tabIndex = -1;
             sections.tabIndex = 0;
             menuDiv.style.opacity = 0;
-            menuDiv.style.zIndex = 0;
+            menuDiv.style.zIndex = -100000;
             menuCircle.className = "menu-circle circle-shrink";
             menuDiv.style.top = window.scrollY+'px';
             document.body.style.overflow = "auto";
+            document.body.style.overflowX = "hidden";
             setTimeout(function(){menuCircleParent.style.marginTop = '-400vh';},500);
         }, 500);
         menuOpen = false;
@@ -306,12 +307,13 @@ function SelectSect(section){
         menuDiv.tabIndex = -1;
         sections.tabIndex = 0;
         menuDiv.style.opacity = 0;
-        menuDiv.style.zIndex = 0;
+        menuDiv.style.zIndex = -100000;
         menuCircle.className = "menu-circle circle-shrink";
         menuDiv.style.top = window.scrollY+'px';
         document.body.style.overflow = "auto";
+        document.body.style.overflowX = "hidden";
         console.log(sectionTops[section]);
-        window.scrollTo(sectionTops[section], sectionTops[section]);
+        window.scrollTo(0, sectionTops[section]);
         setTimeout(function(){menuCircleParent.style.marginTop = '-400vh';},500);
     }, 500);
     menuOpen = false;
@@ -352,13 +354,25 @@ function SelectYear(year){
     datesDiv.children[prevyear].classList.remove('selected');
     datesDiv.children[year].classList.add('selected');
     yearDivs[prevyear].style.opacity = 0;
+    yearDivs[prevyear].style.zIndex = 0;
     yearDivs[year].style.opacity = 1;
+    yearDivs[year].style.zIndex = 100000;
     prevyear = year;
 }
 
 datesDiv.children[0].addEventListener('click', function(){SelectYear(0);});
-datesDiv.children[1].addEventListener('click', function(){SelectYear(1);});
+//datesDiv.children[1].addEventListener('click', function(){SelectYear(1);});
 for(let i = 1; i < datesDiv.children.length; i++){
     datesLeft[i] = datesLeft[i-1]+datesDiv.children[i-1].clientWidth;
     datesDiv.children[i].addEventListener('click', function(){SelectYear(i);});
 }
+
+function resizeDates(){
+    for(let i = 1; i < datesDiv.children.length; i++){
+        datesLeft[i] = datesLeft[i-1]+datesDiv.children[i-1].clientWidth; 
+    }
+    datesDiv.style.marginLeft = (datesLeft[prevyear] * -1) + 'px';
+}
+
+window.addEventListener('webkitfullscreenchange', resizeDates);
+window.addEventListener('resize', resizeDates);
