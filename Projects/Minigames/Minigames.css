@@ -1,0 +1,58 @@
+:root{
+    --main-text-color: white;
+    --imp-text-color: orange;
+}
+*{
+    font-family: inconsolata,monospace;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    color: var(--main-text-color);
+    
+}
+body{
+    /*background-color: #232323;*/
+    background-image: url(Images/background-luxury-minimalist-gradient-style-design.jpg);
+    background-size: cover;
+}
+
+.back-button{
+    width: 2vw;
+    height: 2vw;
+    color: white;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    z-index: 10000;
+}
+
+.title{
+    margin-top: 5vw;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    position: relative;
+}
+
+.main-content{
+    margin-left: 5vw;
+    margin-top: 3vh;
+    width: 90%;
+}
+
+.images{
+    display: flex;
+    width: 75vw;
+    margin-left: 5vw;
+    gap: 5vw;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.images > *{
+    border-radius: 1vw;
+    width: 13vw;
+}
